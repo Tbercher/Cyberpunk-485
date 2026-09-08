@@ -25,6 +25,7 @@
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_powerUp","path":"objects/obj_powerUp/obj_powerUp.yy",},},
     {"id":{"name":"obj_road","path":"objects/obj_road/obj_road.yy",},},
     {"id":{"name":"obj_roadManager","path":"objects/obj_roadManager/obj_roadManager.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
