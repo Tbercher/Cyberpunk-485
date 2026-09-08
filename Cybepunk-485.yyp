@@ -9,7 +9,9 @@
     "name":"Default",
   },
   "defaultScriptType":0,
-  "Folders":[],
+  "Folders":[
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
@@ -20,6 +22,11 @@
   "name":"Cybepunk-485",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Car_1","path":"sprites/Car_1/Car_1.yy",},},
+    {"id":{"name":"Car_2","path":"sprites/Car_2/Car_2.yy",},},
+    {"id":{"name":"Car_Player","path":"sprites/Car_Player/Car_Player.yy",},},
+    {"id":{"name":"Powerup","path":"sprites/Powerup/Powerup.yy",},},
+    {"id":{"name":"Road","path":"sprites/Road/Road.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
