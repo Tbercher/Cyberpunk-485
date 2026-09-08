@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_player",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_player",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Car_1",
-    "path":"sprites/Car_1/Car_1.yy",
+    "name":"Car_Player",
+    "path":"sprites/Car_Player/Car_Player.yy",
   },
   "spriteMaskId":null,
   "visible":true,

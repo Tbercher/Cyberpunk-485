@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_road",
+  "%Name":"obj_enemy1",
   "eventList":[],
   "managed":true,
-  "name":"obj_road",
+  "name":"obj_enemy1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Road",
-    "path":"sprites/Road/Road.yy",
+    "name":"Car_2",
+    "path":"sprites/Car_2/Car_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
