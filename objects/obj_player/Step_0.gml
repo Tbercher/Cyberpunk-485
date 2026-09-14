@@ -4,24 +4,24 @@ camera_set_view_pos(cam, 0, y - camera_get_view_height(cam) / 2 - camera_get_vie
 
 // Player movement
 if (keyboard_check(vk_up)){
-	velocity += acceleration;
+	velocity -= acceleration;
 }
 
 if (keyboard_check(vk_down)){
-	velocity -= acceleration;
+	velocity += acceleration;
 }
 
 // Turning should change the wheel rotation not the car rotation
 if (keyboard_check(vk_left)){
-	x -= 3
-	image_angle += .25
+	image_angle += 1
 }
 
 if (keyboard_check(vk_right)){
-	x += 3
-	image_angle -= .25
+	image_angle -= 1
 }
 
-//x += lengthdir_x(velocity, image_angle);
-//y += lengthdir_y(velocity, image_angle);
-velocity = clamp(velocity, 0, maxSpeed);
+x -= lengthdir_x(velocity, image_angle);
+y -= lengthdir_y(velocity, image_angle);
+velocity = clamp(velocity, -maxSpeed, 0);
+
+show_debug_message(velocity)
