@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"Car_1",
+  "%Name":"PoliceCar",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":15,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"9b71f4a2-0ac0-474c-838d-69526140acad","name":"9b71f4a2-0ac0-474c-838d-69526140acad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"aed25ebf-a1af-4a8e-8033-d3ac6a2f59ca","name":"aed25ebf-a1af-4a8e-8033-d3ac6a2f59ca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"115b582f-3560-46bf-8dab-2e9db385c658","blendMode":0,"displayName":"default","isLocked":false,"name":"115b582f-3560-46bf-8dab-2e9db385c658","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"37fcff26-96f0-47ce-b04e-9c36a8082dc0","blendMode":0,"displayName":"default","isLocked":false,"name":"37fcff26-96f0-47ce-b04e-9c36a8082dc0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Car_1",
+  "name":"PoliceCar",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"Car_1",
+    "%Name":"PoliceCar",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Car_1",
+    "name":"PoliceCar",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b71f4a2-0ac0-474c-838d-69526140acad","path":"sprites/Car_1/Car_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fad29134-0751-401f-a252-b3895a3186a8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aed25ebf-a1af-4a8e-8033-d3ac6a2f59ca","path":"sprites/PoliceCar/PoliceCar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3723fe32-4aec-4b56-9b05-6333d6368322","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
