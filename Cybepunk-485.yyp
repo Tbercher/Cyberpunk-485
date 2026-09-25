@@ -25,6 +25,7 @@
   "resources":[
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
+    {"id":{"name":"obj_enemySpawner","path":"objects/obj_enemySpawner/obj_enemySpawner.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_powerUp","path":"objects/obj_powerUp/obj_powerUp.yy",},},
     {"id":{"name":"obj_rewindController","path":"objects/obj_rewindController/obj_rewindController.yy",},},
