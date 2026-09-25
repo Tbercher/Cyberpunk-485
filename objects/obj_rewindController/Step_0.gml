@@ -17,17 +17,19 @@ gameStates = {
 		}
 	]
 }
+
+The rewind mechanic's main usecase is that if you're coming up on an intersection and notice that you don't have enough time to stop for the coming cars or to speed up and avoid them hitting you, you can rewind and have a few more seconds to alter your pace for the coming intersection. 
 */
-if (rewindMeter == 100 && keyboard_check(vk_space) && keyboard_check(vk_shift)){
+if (canRewind && keyboard_check(vk_space) && keyboard_check(vk_shift)){
 if (!rewindActive){
-	alarm[0] = 300;
+	alarm[0] = rewindTime - 1;
+	show_debug_message("rewind activated");
 }
 rewindActive = true;
-show_debug_message("rewind activated");
 }
 
 if (!rewindActive){
-	if (array_length(gameStates.values) < 300){
+	if (array_length(gameStates.values) < rewindTime){
 	array_push(gameStates.values, {})
 	}
 	else{
@@ -53,16 +55,22 @@ for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 		else{
 			// set variables to previous gamestate values for rewind. 
 			var lastValue = gameStates.values[newest_index][$ real(currentObj)][$ currentVar]
-			show_debug_message("currentObj: " + string(currentObj));
-			show_debug_message("currentVar: " + string(currentVar));
-			show_debug_message("lastValue: " + string(lastValue));
+			show_debug_message("before restore: " + string(obj_player.y));
 			variable_instance_set(real(currentObj), currentVar, lastValue)
-
+			show_debug_message("after restore: " + string(obj_player.y));
 		}
 	}
 }
-if (rewindActive && newest_index > 0){
-	array_delete(gameStates.values, newest_index, 1);
+if (rewindActive && newest_index >= 0) {
+    array_delete(gameStates.values, newest_index, 1);
+
+    var cam = view_camera[0];
+    camera_set_view_pos(
+        cam,
+        0,
+        obj_player.y - camera_get_view_height(cam) / 2
+          - camera_get_view_height(cam) / 4
+    );
 }
 /*
 if (keyboard_check_pressed(vk_space)) {

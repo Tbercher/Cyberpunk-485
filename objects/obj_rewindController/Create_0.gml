@@ -16,8 +16,9 @@ gameStates.values[0][$ string(real(obj_player.id))] = {
 			velocity: 0
 }
 
-rewindMeter = 100;
+canRewind = false
 rewindActive = false
+alarm[1] = rewindTime;
 /*
 Either use an array of size 300, push new in and delete the 301th element for each frame. Or I can use dictionary with named keys from 1 to 100. Ima go with an Array
 Decision 1. Array

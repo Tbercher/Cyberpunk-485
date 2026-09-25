@@ -1,7 +1,3 @@
-// Camera follow player
-cam = view_camera[0];
-camera_set_view_pos(cam, 0, y - camera_get_view_height(cam) / 2 - camera_get_view_height(cam) / 4)
-
 // Player movement
 if (keyboard_check(vk_up)){
 	velocity -= acceleration;
@@ -23,3 +19,11 @@ if (keyboard_check(vk_right)){
 x -= lengthdir_x(velocity, image_angle);
 y -= lengthdir_y(velocity, image_angle);
 velocity = clamp(velocity, -maxSpeed, 0);
+
+// Camera follow player
+cam = view_camera[0];
+camera_set_view_pos(cam, 0, y - camera_get_view_height(cam) / 2 - camera_get_view_height(cam) / 4)
+show_debug_message(
+    "player y: " + string(y)
+    + " camera y: " + string(camera_get_view_y(cam))
+);
