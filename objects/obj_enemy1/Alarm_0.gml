@@ -1,1 +1,0 @@
-struct_remove(obj_rewindController.gameStates, id)

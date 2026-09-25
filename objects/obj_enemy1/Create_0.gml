@@ -6,13 +6,8 @@ if (rewindController == noone) {
 	//show_debug_log(rewindController.gameStates)
 }
 else{
-	if (rewindController.gameStates){
-		show_debug_message("FOUNDDDD")
-	rewindController.gameStates[0][$ id] = {
-	x: x,
-	y: y,
-	image_angle: image_angle,
-	object_index: object_index
-	}
+	if (instance_exists(obj_rewindController)){
+	show_debug_message("FOUNDDDD")
+
 }
 }

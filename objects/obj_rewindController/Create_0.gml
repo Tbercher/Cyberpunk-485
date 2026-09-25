@@ -1,12 +1,23 @@
-gameStates = [{
-	player: {
-	x: obj_player.x,
-	y: obj_player.y,
-	image_sprite: 90,
-	velocity: 0
+gameStates = {
+	objects:
+	{
 	},
-}];
+	values: [
+		{
+		}
+	]
+}
 
+gameStates.objects[$ string(real(obj_player.id))] = ["x", "y", "image_angle", "velocity"]
+gameStates.values[0][$ string(real(obj_player.id))] = {
+			x: obj_player.x,
+			y: obj_player.y,
+			image_angle: 90,
+			velocity: 0
+}
+
+rewindMeter = 100;
+rewindActive = false
 /*
 Either use an array of size 300, push new in and delete the 301th element for each frame. Or I can use dictionary with named keys from 1 to 100. Ima go with an Array
 Decision 1. Array

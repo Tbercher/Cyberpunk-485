@@ -23,5 +23,3 @@ if (keyboard_check(vk_right)){
 x -= lengthdir_x(velocity, image_angle);
 y -= lengthdir_y(velocity, image_angle);
 velocity = clamp(velocity, -maxSpeed, 0);
-
-show_debug_message(velocity)
