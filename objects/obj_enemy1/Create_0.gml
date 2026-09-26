@@ -1,5 +1,5 @@
 rewindController = instance_find(obj_rewindController, 0)
-
+/*
 if (rewindController == noone) {
     rewindController = instance_find(obj_rewindController, 0);
 	show_debug_message("not founddd")
@@ -11,3 +11,6 @@ else{
 
 }
 }
+*/
+
+obj_rewindController.gameStates.objects[$ string(real(id))] = ["x", "y", "image_angle", "velocity"]

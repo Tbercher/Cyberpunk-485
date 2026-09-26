@@ -20,6 +20,7 @@ gameStates = {
 
 The rewind mechanic's main usecase is that if you're coming up on an intersection and notice that you don't have enough time to stop for the coming cars or to speed up and avoid them hitting you, you can rewind and have a few more seconds to alter your pace for the coming intersection. 
 */
+
 if (canRewind && keyboard_check(vk_space) && keyboard_check(vk_shift)){
 if (!rewindActive){
 	alarm[0] = rewindTime - 1;
@@ -39,28 +40,68 @@ if (!rewindActive){
 }
 
 var newest_index = array_length(gameStates.values) - 1;
-
 for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 	var currentObj = variable_struct_get_names(gameStates.objects)[i];
 	if (!rewindActive){
 		gameStates.values[newest_index][$ currentObj] = {}
 	}
 	var currentValues = gameStates.values[newest_index][$ currentObj];
+	var cachedState = undefined;
+	var holdCachedState = false;
+	if (rewindActive){
+		//when we have history for the obj
+		if (is_struct(currentValues)){
+			rewindCache[$ currentObj] = {
+				values: variable_clone(currentValues),
+				missingFrames: 0
+			};
+		}
+		//when we don't have history for the object and the object is in the rewindCache
+		else if (variable_struct_exists(rewindCache, currentObj)){
+			cachedState = rewindCache[$ currentObj];
+			cachedState.missingFrames += 1;
+			currentValues = cachedState.values;
+		}
+	}
+	else if (variable_struct_exists(rewindCache, currentObj)){
+		cachedState = rewindCache[$ currentObj];
+		if (cachedState.missingFrames > 0){
+			holdCachedState = true;
+			cachedState.missingFrames -= 1;
+		}		
+		else{
+			//rewind is over so we don't need any rewind cache for objects with no mising frames
+			variable_struct_remove(rewindCache, currentObj);
+		}
+	}
+
 	for (var j = 0; j < array_length(gameStates.objects[$ currentObj]); j++){
 		var currentVar = gameStates.objects[$ currentObj][j] 
 		if (!rewindActive){
 			// save the values that are currently in these variables to the values array. 
-			currentValues[$ currentVar] = variable_instance_get(real(currentObj), currentVar)
+			if (instance_exists(real(currentObj))) {
+				if (holdCachedState){
+					var cachedValue = cachedState.values[$ currentVar];
+
+					variable_instance_set(real(currentObj), currentVar, cachedValue);
+
+					currentValues[$ currentVar] = cachedValue;
+				}
+				else{
+					currentValues[$ currentVar] = variable_instance_get(real(currentObj), currentVar)
+				}
+			}
 		}
 		else{
-			// set variables to previous gamestate values for rewind. 
-			var lastValue = gameStates.values[newest_index][$ real(currentObj)][$ currentVar]
-			show_debug_message("before restore: " + string(obj_player.y));
-			variable_instance_set(real(currentObj), currentVar, lastValue)
-			show_debug_message("after restore: " + string(obj_player.y));
+			// Older frames may not contain objects spawned after those frames were recorded.
+			if (instance_exists(real(currentObj)) && is_struct(currentValues)) {
+				var lastValue = currentValues[$ currentVar];
+				variable_instance_set(real(currentObj), currentVar, lastValue);
+			}
 		}
 	}
 }
+
 if (rewindActive && newest_index >= 0) {
     array_delete(gameStates.values, newest_index, 1);
 
