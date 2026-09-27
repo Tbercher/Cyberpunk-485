@@ -76,19 +76,32 @@ for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 	}
 
 	for (var j = 0; j < array_length(gameStates.objects[$ currentObj]); j++){
-		var currentVar = gameStates.objects[$ currentObj][j] 
+		var currentVar = gameStates.objects[$ currentObj][j];
 		if (!rewindActive){
 			// save the values that are currently in these variables to the values array. 
 			if (instance_exists(real(currentObj))) {
 				if (holdCachedState){
 					var cachedValue = cachedState.values[$ currentVar];
 
-					variable_instance_set(real(currentObj), currentVar, cachedValue);
-
-					currentValues[$ currentVar] = cachedValue;
+					if (is_struct(cachedValue) || is_array(cachedValue)){
+						variable_instance_set(real(currentObj), currentVar, variable_clone(cachedValue));
+						currentValues[$ currentVar] = variable_clone(cachedValue);
+					}
+					else {
+						variable_instance_set(real(currentObj), currentVar, cachedValue);
+						currentValues[$ currentVar] = cachedValue;
+					}
+					
 				}
 				else{
-					currentValues[$ currentVar] = variable_instance_get(real(currentObj), currentVar)
+					var value = variable_instance_get(real(currentObj), currentVar);
+					// When saving the state of the game a few lines down, note that saving a struct or an array just saves a reference to it, whilst we need a snapshot of it's current values at the time, so we need to clone the value if it's a struct or an array. 
+					if (is_struct(value) || is_array(value)){
+						currentValues[$ currentVar] = variable_clone(value);
+					}
+					else{
+						currentValues[$ currentVar] = value;
+					}
 				}
 			}
 		}
@@ -96,6 +109,10 @@ for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 			// Older frames may not contain objects spawned after those frames were recorded.
 			if (instance_exists(real(currentObj)) && is_struct(currentValues)) {
 				var lastValue = currentValues[$ currentVar];
+
+				if (is_array(lastValue) || is_struct(lastValue)){
+					lastValue = variable_clone(lastValue);
+				}
 				variable_instance_set(real(currentObj), currentVar, lastValue);
 			}
 		}

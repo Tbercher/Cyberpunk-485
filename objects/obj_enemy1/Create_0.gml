@@ -1,4 +1,3 @@
-rewindController = instance_find(obj_rewindController, 0)
 /*
 if (rewindController == noone) {
     rewindController = instance_find(obj_rewindController, 0);
