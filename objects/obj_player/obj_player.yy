@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Car_Player",
-    "path":"sprites/Car_Player/Car_Player.yy",
+    "name":"PlayerCar",
+    "path":"sprites/PlayerCar/PlayerCar.yy",
   },
   "spriteMaskId":null,
   "visible":true,
