@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tempStraightRoad",
-    "path":"sprites/tempStraightRoad/tempStraightRoad.yy",
+    "name":"RoadStraight",
+    "path":"sprites/RoadStraight/RoadStraight.yy",
   },
   "spriteMaskId":null,
   "visible":true,
