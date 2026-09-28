@@ -47,6 +47,7 @@
     {"id":{"name":"RoadCornerLeft","path":"sprites/RoadCornerLeft/RoadCornerLeft.yy",},},
     {"id":{"name":"RoadCornerRight","path":"sprites/RoadCornerRight/RoadCornerRight.yy",},},
     {"id":{"name":"RoadStraightl","path":"sprites/RoadStraightl/RoadStraightl.yy",},},
+    {"id":{"name":"RoadStraightNew","path":"sprites/RoadStraightNew/RoadStraightNew.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

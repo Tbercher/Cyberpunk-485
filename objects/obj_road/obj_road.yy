@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_road",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_road",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"RoadStraightl",
-    "path":"sprites/RoadStraightl/RoadStraightl.yy",
+    "name":"RoadStraightNew",
+    "path":"sprites/RoadStraightNew/RoadStraightNew.yy",
   },
   "spriteMaskId":null,
   "visible":true,
