@@ -6,3 +6,5 @@ for (var segment = 0; segment < segmentsNeeded; segment++){
 	array_push(roadSegments, newSegment);
 	lastSegmentHeight -= obj_road.sprite_height;
 }
+
+alarm[0] = level_duration_seconds * 60;

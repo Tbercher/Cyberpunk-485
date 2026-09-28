@@ -32,6 +32,7 @@
     {"id":{"name":"obj_road","path":"objects/obj_road/obj_road.yy",},},
     {"id":{"name":"obj_roadManager","path":"objects/obj_roadManager/obj_roadManager.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"scr_helperFunctions","path":"scripts/scr_helperFunctions/scr_helperFunctions.yy",},},
     {"id":{"name":"Car_1","path":"sprites/Car_1/Car_1.yy",},},
     {"id":{"name":"Car_2","path":"sprites/Car_2/Car_2.yy",},},
@@ -51,6 +52,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

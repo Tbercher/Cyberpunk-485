@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Road",
-    "path":"sprites/Road/Road.yy",
+    "name":"RoadStraightl",
+    "path":"sprites/RoadStraightl/RoadStraightl.yy",
   },
   "spriteMaskId":null,
   "visible":true,
