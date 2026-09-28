@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"OldRoadSprites",
-    "path":"folders/Sprites/OldRoadSprites.yy",
+    "name":"RoadSprites",
+    "path":"folders/Sprites/RoadSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Car2",
-    "path":"sprites/Car2/Car2.yy",
+    "name":"Car_1",
+    "path":"sprites/Car_1/Car_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

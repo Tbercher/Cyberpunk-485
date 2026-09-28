@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"OldCarSprites",
-    "path":"folders/Sprites/OldCarSprites.yy",
+    "name":"CarSprites",
+    "path":"folders/Sprites/CarSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

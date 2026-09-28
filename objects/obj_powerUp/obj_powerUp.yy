@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Powerup22",
-    "path":"sprites/Powerup22/Powerup22.yy",
+    "name":"Powerup",
+    "path":"sprites/Powerup/Powerup.yy",
   },
   "spriteMaskId":null,
   "visible":true,
