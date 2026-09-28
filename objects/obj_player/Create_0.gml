@@ -1,8 +1,4 @@
-// sets player car hp
-hp = max_hp;
-// sets iframes for player car
-is_invulnerable = false;
-
-// size of player car
-image_xscale = car_scale;
-image_yscale = car_scale;
+velocity = 0;
+acceleration = .1
+maxSpeed = 8;
+image_angle = 90;

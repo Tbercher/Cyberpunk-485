@@ -1,6 +1,15 @@
-// speed of enemy car
-vspeed = 12;
+/*
+if (rewindController == noone) {
+    rewindController = instance_find(obj_rewindController, 0);
+	show_debug_message("not founddd")
+	//show_debug_log(rewindController.gameStates)
+}
+else{
+	if (instance_exists(obj_rewindController)){
+	show_debug_message("FOUNDDDD")
 
-// size of enemy car
-image_xscale = car_scale;
-image_yscale = car_scale;
+}
+}
+*/
+
+obj_rewindController.gameStates.objects[$ string(real(id))] = ["x", "y", "image_angle", "velocity"]
