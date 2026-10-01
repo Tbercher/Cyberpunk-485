@@ -9,8 +9,6 @@ for (var i = 0; i < segmentsNeeded; i++) {
     lastSegmentHeight -= obj_road.sprite_height;
 }
 
-alarm[0] = level_duration_seconds * 60;
-
 if (!variable_instance_exists(id, "enemy_spawn_rate")) {
     enemy_spawn_rate = 60;
 }
