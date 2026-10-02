@@ -32,7 +32,7 @@ function spawn_enemy(enemyType){
     var enemy = instance_create_layer(xPositioning, yPositioning, "Instances", enemyType);
     
     //Set enemy's speed
-    enemy.vspeed = 4;
+    enemy.velocity = 4;
 }
 
 //If rewind is active, exit the alarm event to prevent spawning or further messing with the spawn timer that's being currently controller by the rewind controller
