@@ -2,10 +2,17 @@
   "$GMSprite":"v2",
   "%Name":"playerCar2",
   "bboxMode":0,
+<<<<<<< Updated upstream
   "bbox_bottom":31,
   "bbox_left":1,
   "bbox_right":62,
   "bbox_top":0,
+=======
+  "bbox_bottom":62,
+  "bbox_left":0,
+  "bbox_right":31,
+  "bbox_top":1,
+>>>>>>> Stashed changes
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,14 +23,22 @@
   ],
   "gridX":0,
   "gridY":0,
+<<<<<<< Updated upstream
   "height":32,
+=======
+  "height":64,
+>>>>>>> Stashed changes
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"59b7174b-30d0-402d-b234-6ccc000f3a26","blendMode":0,"displayName":"default","isLocked":false,"name":"59b7174b-30d0-402d-b234-6ccc000f3a26","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"playerCar2",
   "nineSlice":null,
+<<<<<<< Updated upstream
   "origin":4,
+=======
+  "origin":0,
+>>>>>>> Stashed changes
   "parent":{
     "name":"NewPlayerSprites",
     "path":"folders/Sprites/NewPlayerSprites.yy",
@@ -75,8 +90,13 @@
     ],
     "visibleRange":null,
     "volume":1.0,
+<<<<<<< Updated upstream
     "xorigin":32,
     "yorigin":16,
+=======
+    "xorigin":0,
+    "yorigin":0,
+>>>>>>> Stashed changes
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +106,9 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< Updated upstream
   "width":64,
+=======
+  "width":32,
+>>>>>>> Stashed changes
 }

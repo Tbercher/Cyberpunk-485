@@ -28,13 +28,24 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
+<<<<<<< Updated upstream
   "properties":[],
+=======
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"car_scale","filters":[],"listItems":[],"multiselect":false,"name":"car_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+  ],
+>>>>>>> Stashed changes
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+<<<<<<< Updated upstream
     "name":"Car_2",
     "path":"sprites/Car_2/Car_2.yy",
+=======
+    "name":"PoliceCar22",
+    "path":"sprites/PoliceCar22/PoliceCar22.yy",
+>>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,
