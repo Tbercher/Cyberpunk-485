@@ -25,13 +25,24 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
+<<<<<<< Updated upstream
   "properties":[],
+=======
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"road_width","filters":[],"listItems":[],"multiselect":false,"name":"road_width","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+  ],
+>>>>>>> Stashed changes
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+<<<<<<< Updated upstream
     "name":"tempStraightRoad",
     "path":"sprites/tempStraightRoad/tempStraightRoad.yy",
+=======
+    "name":"RoadStraight",
+    "path":"sprites/RoadStraight/RoadStraight.yy",
+>>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,
