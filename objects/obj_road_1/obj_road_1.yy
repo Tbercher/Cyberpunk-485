@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_road",
+  "%Name":"obj_road_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_road",
+  "name":"obj_road_1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -25,24 +25,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-<<<<<<< Updated upstream
   "properties":[],
-=======
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"road_width","filters":[],"listItems":[],"multiselect":false,"name":"road_width","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-  ],
->>>>>>> Stashed changes
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-<<<<<<< Updated upstream
     "name":"tempStraightRoad",
     "path":"sprites/tempStraightRoad/tempStraightRoad.yy",
-=======
-    "name":"RoadStraight",
-    "path":"sprites/RoadStraight/RoadStraight.yy",
->>>>>>> Stashed changes
   },
   "spriteMaskId":null,
   "visible":true,

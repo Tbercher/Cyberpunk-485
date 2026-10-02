@@ -18,7 +18,12 @@ function hasHeldEnemy(enemyType){
             instance_exists(real(objectId)) &&
             cachedState.missingFrames > 0 &&
             variable_instance_get(real(objectId), "object_index") == enemyType
+<<<<<<< Updated upstream
         ){
+=======
+        ) 
+		{
+>>>>>>> Stashed changes
             return true;
         }
     }

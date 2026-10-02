@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"Cybepunk-485",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -29,7 +29,6 @@
   },
   "name":"Cybepunk-485",
   "resources":[
-    {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},},
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
     {"id":{"name":"obj_enemySpawner","path":"objects/obj_enemySpawner/obj_enemySpawner.yy",},},
@@ -37,7 +36,10 @@
     {"id":{"name":"obj_powerUp","path":"objects/obj_powerUp/obj_powerUp.yy",},},
     {"id":{"name":"obj_rewindController","path":"objects/obj_rewindController/obj_rewindController.yy",},},
     {"id":{"name":"obj_road","path":"objects/obj_road/obj_road.yy",},},
+    {"id":{"name":"obj_roadManager_1","path":"objects/obj_roadManager_1/obj_roadManager_1.yy",},},
     {"id":{"name":"obj_roadManager","path":"objects/obj_roadManager/obj_roadManager.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_helperFunctions","path":"scripts/scr_helperFunctions/scr_helperFunctions.yy",},},
     {"id":{"name":"Car_1","path":"sprites/Car_1/Car_1.yy",},},
@@ -66,8 +68,6 @@
     {"id":{"name":"RoadCornerRight","path":"sprites/RoadCornerRight/RoadCornerRight.yy",},},
     {"id":{"name":"RoadStraight","path":"sprites/RoadStraight/RoadStraight.yy",},},
     {"id":{"name":"RoadStraightl","path":"sprites/RoadStraightl/RoadStraightl.yy",},},
-    {"id":{"name":"Sprite33","path":"sprites/Sprite33/Sprite33.yy",},},
-    {"id":{"name":"tempStraightRoad","path":"sprites/tempStraightRoad/tempStraightRoad.yy",},},
     {"id":{"name":"Trash","path":"sprites/Trash/Trash.yy",},},
     {"id":{"name":"TutorialRoad3way","path":"sprites/TutorialRoad3way/TutorialRoad3way.yy",},},
     {"id":{"name":"TutorialRoad4Way","path":"sprites/TutorialRoad4Way/TutorialRoad4Way.yy",},},
@@ -77,6 +77,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",

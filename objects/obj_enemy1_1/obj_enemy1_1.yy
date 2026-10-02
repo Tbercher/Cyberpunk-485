@@ -1,11 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_road",
+  "%Name":"obj_enemy1_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_road",
+  "name":"obj_enemy1_1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,7 +32,7 @@
   "properties":[],
 =======
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"road_width","filters":[],"listItems":[],"multiselect":false,"name":"road_width","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"car_scale","filters":[],"listItems":[],"multiselect":false,"name":"car_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
 >>>>>>> Stashed changes
   "resourceType":"GMObject",
@@ -37,11 +40,11 @@
   "solid":false,
   "spriteId":{
 <<<<<<< Updated upstream
-    "name":"tempStraightRoad",
-    "path":"sprites/tempStraightRoad/tempStraightRoad.yy",
+    "name":"Car_2",
+    "path":"sprites/Car_2/Car_2.yy",
 =======
-    "name":"RoadStraight",
-    "path":"sprites/RoadStraight/RoadStraight.yy",
+    "name":"PoliceCar22",
+    "path":"sprites/PoliceCar22/PoliceCar22.yy",
 >>>>>>> Stashed changes
   },
   "spriteMaskId":null,
