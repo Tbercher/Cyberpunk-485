@@ -7,7 +7,6 @@ if (keyboard_check(vk_down)){
 	velocity += acceleration;
 }
 
-// Turning should change the wheel rotation not the car rotation
 if (keyboard_check(vk_left)){
 	image_angle += 1
 }
@@ -15,9 +14,14 @@ if (keyboard_check(vk_left)){
 if (keyboard_check(vk_right)){
 	image_angle -= 1
 }
-
+if (instance_exists(obj_scoreboard)){
+	yChange = lengthdir_y(velocity, image_angle);
+	if (yChange > 0){
+		obj_scoreboard.floatScore += yChange / 100;
+	}
+}
 x -= lengthdir_x(velocity, image_angle);
-y -= lengthdir_y(velocity, image_angle);
+y -= yChange;
 velocity = clamp(velocity, -maxSpeed, 0);
 
 // Camera follow player

@@ -28,3 +28,10 @@ y -= distanceY * impactFactor;
 
 other.crashVelocityX -= -distanceX * 2 * impactFactor;
 other.crashVelocityY -= -distanceY * 2 * impactFactor;
+healthPercent -= 20
+
+if (healthPercent <= 0){
+    // display game over
+    global.gameOver = true;
+    instance_destroy();
+}

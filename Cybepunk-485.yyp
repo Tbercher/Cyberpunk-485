@@ -46,6 +46,7 @@
     {"id":{"name":"obj_roadManager_1","path":"objects/obj_roadManager_1/obj_roadManager_1.yy",},},
     {"id":{"name":"obj_roadManager","path":"objects/obj_roadManager/obj_roadManager.yy",},},
     {"id":{"name":"obj_roadside","path":"objects/obj_roadside/obj_roadside.yy",},},
+    {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

@@ -1,4 +1,5 @@
 roadSegments = [];
+spawnBuilding = random_range(0, 1) > 0.5;
 
 var segmentsNeeded = ceil(room_height / obj_road.sprite_height) + 3;
 lastSegmentHeight = obj_road.y - obj_road.sprite_height;
