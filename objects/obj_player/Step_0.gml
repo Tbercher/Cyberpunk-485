@@ -23,3 +23,4 @@ velocity = clamp(velocity, -maxSpeed, 0);
 // Camera follow player
 cam = view_camera[0];
 camera_set_view_pos(cam, 0, y - camera_get_view_height(cam) / 2 - camera_get_view_height(cam) / 4);
+camera_initiated = true;

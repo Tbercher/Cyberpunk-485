@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_building",
+  "eventList":[],
   "managed":true,
-  "name":"obj_player_1",
+  "name":"obj_building",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerCar2",
-    "path":"sprites/PlayerCar2/PlayerCar2.yy",
+    "name":"tempBuilding",
+    "path":"sprites/tempBuilding/tempBuilding.yy",
   },
   "spriteMaskId":null,
   "visible":true,

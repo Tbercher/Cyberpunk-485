@@ -1,5 +1,6 @@
+
 // only allow the instance with a smaller id to process the collision. prevents double processing
-if (id > other.id){
+if (object_index != obj_player){
     exit;
 }
 
@@ -15,4 +16,15 @@ var distance = point_distance(0, 0, distanceX, distanceY);
 if (distance <= 0){
     distanceX = lengthdir_x(1, image_angle);
     distanceY = lengthdir_y(1, image_angle);
+    distance = 1;
 }
+    
+//normalize the distance vector
+distanceX = distanceX / distance;
+distanceY = distanceY / distance;
+
+x -= distanceX * impactFactor;
+y -= distanceY * impactFactor;
+
+other.crashVelocityX -= -distanceX * 2 * impactFactor;
+other.crashVelocityY -= -distanceY * 2 * impactFactor;

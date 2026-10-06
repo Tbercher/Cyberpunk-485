@@ -7,6 +7,21 @@ if (!variable_instance_exists(id, "rewindController")){
     }
 }
 
+var player = instance_find(obj_player, 0);
+//Find the camera and stop spawning if it's not been initialized
+if (player == noone){
+    exit;
+}
+
+if (!variable_instance_exists(player, "camera_initiated")) {
+    exit;
+}
+
+
+if (player.camera_initiated == false){
+    exit;
+}
+
 function hasHeldEnemy(enemyType){
     var cacheNames = variable_struct_get_names(obj_rewindController.rewindCache);
 
