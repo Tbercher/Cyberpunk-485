@@ -11,7 +11,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_car",
+    "path":"objects/obj_car/obj_car.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Car_1",
-    "path":"sprites/Car_1/Car_1.yy",
+    "name":"Car2",
+    "path":"sprites/Car2/Car2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,4 +1,8 @@
+event_inherited();
+
 velocity = 0;
-acceleration = .1
+acceleration = .1;
 maxSpeed = 8;
 image_angle = 90;
+camera_initiated = false;
+healthPercent = 100;

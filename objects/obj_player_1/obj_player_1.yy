@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"playerCar2",
-    "path":"sprites/playerCar2/playerCar2.yy",
+    "name":"PlayerCar2",
+    "path":"sprites/PlayerCar2/PlayerCar2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

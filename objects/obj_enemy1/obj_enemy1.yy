@@ -14,7 +14,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_car",
+    "path":"objects/obj_car/obj_car.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,19 +31,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-<<<<<<< Updated upstream
   "properties":[],
-=======
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"car_scale","filters":[],"listItems":[],"multiselect":false,"name":"car_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-  ],
->>>>>>> Stashed changes
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Car_2",
-    "path":"sprites/Car_2/Car_2.yy",
+    "name":"Car1",
+    "path":"sprites/Car1/Car1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

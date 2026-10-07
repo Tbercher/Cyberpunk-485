@@ -1,44 +1,29 @@
 {
   "$GMSprite":"v2",
-  "%Name":"playerCar2",
+  "%Name":"PlayerCar2",
   "bboxMode":0,
-<<<<<<< Updated upstream
-  "bbox_bottom":31,
-  "bbox_left":1,
-  "bbox_right":62,
+  "bbox_bottom":63,
+  "bbox_left":2,
+  "bbox_right":125,
   "bbox_top":0,
-=======
-  "bbox_bottom":62,
-  "bbox_left":0,
-  "bbox_right":31,
-  "bbox_top":1,
->>>>>>> Stashed changes
-  "collisionKind":1,
+  "collisionKind":0,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ee2af1f0-e64e-4b88-bc09-96fe624f3066","name":"ee2af1f0-e64e-4b88-bc09-96fe624f3066","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"baae2bb1-4b69-4a0d-8858-6ce02c559aed","name":"baae2bb1-4b69-4a0d-8858-6ce02c559aed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-<<<<<<< Updated upstream
-  "height":32,
-=======
   "height":64,
->>>>>>> Stashed changes
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"59b7174b-30d0-402d-b234-6ccc000f3a26","blendMode":0,"displayName":"default","isLocked":false,"name":"59b7174b-30d0-402d-b234-6ccc000f3a26","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e46f431e-e335-45bc-8565-5327939ed935","blendMode":0,"displayName":"default","isLocked":false,"name":"e46f431e-e335-45bc-8565-5327939ed935","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"playerCar2",
+  "name":"PlayerCar2",
   "nineSlice":null,
-<<<<<<< Updated upstream
   "origin":4,
-=======
-  "origin":0,
->>>>>>> Stashed changes
   "parent":{
     "name":"NewPlayerSprites",
     "path":"folders/Sprites/NewPlayerSprites.yy",
@@ -48,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"playerCar2",
+    "%Name":"PlayerCar2",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -72,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"playerCar2",
+    "name":"PlayerCar2",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -84,19 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ee2af1f0-e64e-4b88-bc09-96fe624f3066","path":"sprites/playerCar2/playerCar2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9387e50c-474e-4823-8e19-8b73cd42701d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"baae2bb1-4b69-4a0d-8858-6ce02c559aed","path":"sprites/PlayerCar2/PlayerCar2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a88ea242-c5ac-477b-bbe7-bc8561a30d39","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-<<<<<<< Updated upstream
-    "xorigin":32,
-    "yorigin":16,
-=======
-    "xorigin":0,
-    "yorigin":0,
->>>>>>> Stashed changes
+    "xorigin":64,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -106,9 +86,5 @@
   },
   "type":0,
   "VTile":false,
-<<<<<<< Updated upstream
-  "width":64,
-=======
-  "width":32,
->>>>>>> Stashed changes
+  "width":128,
 }
