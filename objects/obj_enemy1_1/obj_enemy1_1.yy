@@ -37,6 +37,8 @@
   "spriteId":{
     "name":"Car_2",
     "path":"sprites/Car_2/Car_2.yy",
+    "name":"PoliceCar22",
+    "path":"sprites/PoliceCar22/PoliceCar22.yy",
   },
   "spriteMaskId":null,
   "visible":true,
