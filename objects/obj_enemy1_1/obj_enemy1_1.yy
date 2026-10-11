@@ -36,7 +36,7 @@
   "solid":false,
   "spriteId":{
     "name":"Car_2",
-    "path":"sprites/Car_2/Car_2.yy"
+    "path":"sprites/Car_2/Car_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

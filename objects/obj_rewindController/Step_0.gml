@@ -61,6 +61,20 @@ for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 			cachedState = rewindCache[$ currentObj];
 			cachedState.missingFrames += 1;
 			currentValues = cachedState.values;
+
+			if (real(currentObj).object_index == obj_policeCar){
+				currentValues.active = false;
+			}
+		}
+		// When there is no history for the object and the object is not in the rewindCache yet either (quick fix for police cars)
+		else if (instance_exists(real(currentObj)) && real(currentObj).object_index == obj_policeCar) {
+			currentValues = {
+				x: real(currentObj).x,
+				y: real(currentObj).y,
+				image_angle: real(currentObj).image_angle,
+				velocity: real(currentObj).velocity,
+				active: false
+			};
 		}
 	}
 	else if (variable_struct_exists(rewindCache, currentObj)){
@@ -70,7 +84,7 @@ for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 			cachedState.missingFrames -= 1;
 		}		
 		else{
-			//rewind is over so we don't need any rewind cache for objects with no mising frames
+			//rewind is over so we don't need any rewind cache for objects with no missing frames
 			variable_struct_remove(rewindCache, currentObj);
 		}
 	}

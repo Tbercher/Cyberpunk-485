@@ -29,6 +29,7 @@
   },
   "name":"Cybepunk-485",
   "resources":[
+    {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_building","path":"objects/obj_building/obj_building.yy",},},
     {"id":{"name":"obj_camera_zone","path":"objects/obj_camera_zone/obj_camera_zone.yy",},},
     {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},},
@@ -37,9 +38,12 @@
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
     {"id":{"name":"obj_enemySpawner","path":"objects/obj_enemySpawner/obj_enemySpawner.yy",},},
     {"id":{"name":"obj_exit_wall","path":"objects/obj_exit_wall/obj_exit_wall.yy",},},
+    {"id":{"name":"obj_intersection","path":"objects/obj_intersection/obj_intersection.yy",},},
     {"id":{"name":"obj_level_trasition","path":"objects/obj_level_trasition/obj_level_trasition.yy",},},
     {"id":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_policeBuilding","path":"objects/obj_policeBuilding/obj_policeBuilding.yy",},},
+    {"id":{"name":"obj_policeCar","path":"objects/obj_policeCar/obj_policeCar.yy",},},
     {"id":{"name":"obj_powerUp","path":"objects/obj_powerUp/obj_powerUp.yy",},},
     {"id":{"name":"obj_rewindController_1","path":"objects/obj_rewindController_1/obj_rewindController_1.yy",},},
     {"id":{"name":"obj_rewindController","path":"objects/obj_rewindController/obj_rewindController.yy",},},
@@ -83,6 +87,7 @@
     {"id":{"name":"spr_wall_exit","path":"sprites/spr_wall_exit/spr_wall_exit.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"tempBuilding","path":"sprites/tempBuilding/tempBuilding.yy",},},
+    {"id":{"name":"tempPoliceBuilding","path":"sprites/tempPoliceBuilding/tempPoliceBuilding.yy",},},
     {"id":{"name":"tempRoadside","path":"sprites/tempRoadside/tempRoadside.yy",},},
     {"id":{"name":"tempStraightRoad","path":"sprites/tempStraightRoad/tempStraightRoad.yy",},},
     {"id":{"name":"Trash","path":"sprites/Trash/Trash.yy",},},
@@ -94,8 +99,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
