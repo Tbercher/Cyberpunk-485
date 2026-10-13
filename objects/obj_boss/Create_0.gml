@@ -1,0 +1,9 @@
+velocity = bossSpeed;
+crashVelocityX = 0;
+crashVelocityY = 0;
+maxSpeed = bossSpeed;
+impactFactor = 0;
+image_angle = 180;
+image_xscale = scaling;
+image_yscale = scaling;
+obj_rewindController.gameStates.objects[$ string(real(id))] = ["x", "y", "image_angle", "velocity", "crashVelocityX", "crashVelocityY"]

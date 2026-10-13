@@ -16,6 +16,12 @@ if (instance_exists(obj_player)){
 }
 else {
     if (global.gameOver) {
-        draw_text(display_get_gui_width() / 2, display_get_gui_height() / 2, "Game Over");
+        var center_x = display_get_gui_width() / 2;
+        var center_y = display_get_gui_height() / 2;
+        draw_text(center_x, center_y, "Game Over");
+        draw_text(center_x, center_y + 30, "Press R to restart");
+		if (keyboard_check_pressed(ord("R"))){
+			room_restart();
+		}
     }
 }

@@ -8,12 +8,16 @@ gameStates = {
 	]
 }
 
-gameStates.objects[$ string(real(obj_player.id))] = ["x", "y", "image_angle", "velocity"]
+gameStates.objects[$ string(real(obj_player.id))] = ["x", "y", "image_angle", "velocity", "policed", "healthPercent", "policeTimer", "policed"]
 gameStates.values[0][$ string(real(obj_player.id))] = {
 			x: obj_player.x,
 			y: obj_player.y,
 			image_angle: 90,
-			velocity: 0
+			velocity: 0,
+			policed: false,
+			healthPercent: obj_player.healthPercent,
+			policeTimer: obj_player.policeTimer,
+			policed: obj_player.policed
 }
 rewindTime = self.rewindTime;
 canRewind = false
