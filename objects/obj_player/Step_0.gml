@@ -58,6 +58,8 @@ cam = view_camera[0];
 camera_set_view_pos(cam, 0, y - camera_get_view_height(cam) / 2 - camera_get_view_height(cam) / 4);
 camera_initiated = true;
 
+
+
 //boost speed
 if (isBoosted){
 	velocity = clamp(velocity, -maxSpeed * boostMultiplier, 0);
@@ -66,6 +68,7 @@ else{
 	velocity = clamp(velocity, -maxSpeed, 0);
 }
 
+x = clamp(x, 400, 1000);
 if (healthPercent < 100){
 	healthPercent += .009;
 }
