@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tempRoadside",
-    "path":"sprites/tempRoadside/tempRoadside.yy",
+    "name":"roadSide",
+    "path":"sprites/roadSide/roadSide.yy",
   },
   "spriteMaskId":null,
   "visible":true,

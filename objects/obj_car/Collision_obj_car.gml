@@ -61,6 +61,8 @@ if (object_index == obj_player) {
 other.crashVelocityX -= -distanceX * 2 * impactFactor;
 other.crashVelocityY -= -distanceY * 2 * impactFactor;
 
+audio_play_sound(sfx_impact, 1, false);
+
 if (object_index == obj_boss){
     other.healthPercent = 0;
     global.gameOver = true;
@@ -75,6 +77,7 @@ if (object_index == obj_player && !global.invincibility){
 if (object_index == obj_player && (healthPercent <= 0)){
     // display game over
     global.gameOver = true;
+    audio_play_sound(sfx_crash, 1, false);
     instance_destroy();
 }
 

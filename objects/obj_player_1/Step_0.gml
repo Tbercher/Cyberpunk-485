@@ -50,3 +50,4 @@ var angle_diff = angle_difference(target_cam_angle, cam_angle);
 cam_angle += angle_diff * 0.05;
 
 camera_set_view_angle(cam, cam_angle);
+

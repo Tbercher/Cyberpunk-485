@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tempBuilding",
-    "path":"sprites/tempBuilding/tempBuilding.yy",
+    "name":"building3",
+    "path":"sprites/building3/building3.yy",
   },
   "spriteMaskId":null,
   "visible":true,
