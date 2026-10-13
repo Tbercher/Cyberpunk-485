@@ -6,11 +6,34 @@ var offset_x = (road_w / 2) + (building_w / 2) + 50; //roadside buffer
 var offset_y = (road_h / 2) + (building_h / 2);
 depth = 1;
 image_xscale = 3;
+<<<<<<< Updated upstream
 
+=======
+image_yscale = 3;
+
+//left
+>>>>>>> Stashed changes
 if (random_range(0, 1) > 0.5){
-    instance_create_layer(x - offset_x, y - offset_y, "Instances", obj_building);
+    var b = instance_create_layer(x - offset_x, y - offset_y, "Instances", obj_building);
 }
+<<<<<<< Updated upstream
 
 if (random_range(0, 1) > 0.5){
     instance_create_layer(x + offset_x, y - offset_y, "Instances", obj_building);
 }
+=======
+else{
+	var p = instance_create_layer(x - offset_x, y - offset_y, "Instances", obj_policeBuilding);
+    p.image_angle = 90;
+}
+
+//right
+if (random_range(0, 1) > 0.5){
+    var b = instance_create_layer(x + offset_x, y - offset_y, "Instances", obj_building);
+}
+else{
+	var p = instance_create_layer(x + offset_x, y - offset_y, "Instances", obj_policeBuilding);
+    p.image_angle = 270; 
+}
+
+>>>>>>> Stashed changes
