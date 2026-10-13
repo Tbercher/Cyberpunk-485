@@ -2,8 +2,10 @@ if (!active){
 	visible = false;
 	solid = false;
 	mask_index = -1;
+	audio_pause_sound(siren_sfx);
 	exit;
 }
+audio_resume_sound(siren_sfx);
 visible = true;
 solid = true;
 mask_index = sprite_index;
