@@ -6,7 +6,7 @@ if (instance_exists(obj_player)){
         }
     }
     if (player){
-        if (point_distance(x, y, player.x, player.y) < 200){
+        if (point_distance(x, y, player.x, player.y) < 400){
             if (beenTriggered) {
                 exit;
             }

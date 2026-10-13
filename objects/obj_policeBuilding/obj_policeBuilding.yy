@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tempPoliceBuilding",
-    "path":"sprites/tempPoliceBuilding/tempPoliceBuilding.yy",
+    "name":"BuildingPoliceStation",
+    "path":"sprites/BuildingPoliceStation/BuildingPoliceStation.yy",
   },
   "spriteMaskId":null,
   "visible":true,
