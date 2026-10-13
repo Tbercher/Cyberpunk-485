@@ -134,9 +134,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room_mainMenu","path":"rooms/Room_mainMenu/Room_mainMenu.yy",},},
     {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room_gameOver","path":"rooms/Room_gameOver/Room_gameOver.yy",},},
     {"roomId":{"name":"Room_options","path":"rooms/Room_options/Room_options.yy",},},
   ],
