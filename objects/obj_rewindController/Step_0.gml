@@ -22,6 +22,9 @@ The rewind mechanic's main usecase is that if you're coming up on an intersectio
 */
 
 if (canRewind && keyboard_check(vk_space) && keyboard_check(vk_shift)){
+if (!instance_exists(obj_player)){
+		exit;
+}
 if (!rewindActive){
 	alarm[0] = rewindTime - 1;
 	show_debug_message("rewind activated");
@@ -62,8 +65,11 @@ for (var i = 0; i < variable_struct_names_count(gameStates.objects); i++){
 			cachedState.missingFrames += 1;
 			currentValues = cachedState.values;
 
-			if (real(currentObj).object_index == obj_policeCar){
-				currentValues.active = false;
+			var cachedInstance = real(currentObj);
+			if (instance_exists(cachedInstance)){
+				if (cachedInstance.object_index == obj_policeCar){
+					currentValues.active = false;
+				}
 			}
 		}
 		// When there is no history for the object and the object is not in the rewindCache yet either (quick fix for police cars)
