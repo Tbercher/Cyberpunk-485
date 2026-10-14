@@ -1,6 +1,6 @@
 //global volume control
-global.volume = 1;
+if (!variable_global_exists("volume")) {
+    global.volume = 0.60;
+}
 
 music_started = false;
-
-
