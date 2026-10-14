@@ -10,7 +10,7 @@ image_yscale = 3;
 
 
 //left
-if (random_range(0, 1) > 0.5){
+if (random_range(0, 1) > 0.15){
     var b = instance_create_layer(x - offset_x, y - offset_y, "Instances", obj_building);
 } else {
     var p = instance_create_layer(x - offset_x, y - offset_y, "Instances", obj_policeBuilding);
@@ -18,7 +18,7 @@ if (random_range(0, 1) > 0.5){
 }
 
 //right
-if (random_range(0, 1) > 0.5){
+if (random_range(0, 1) > 0.14){
     var b = instance_create_layer(x + offset_x, y - offset_y, "Instances", obj_building);
 } else {
     var p = instance_create_layer(x + offset_x, y - offset_y, "Instances", obj_policeBuilding);

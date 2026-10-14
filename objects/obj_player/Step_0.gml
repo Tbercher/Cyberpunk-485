@@ -52,6 +52,12 @@ if (policeTimer <= 0){
 x -= lengthdir_x(velocity, image_angle);
 y -= yChange;
 
+if (y < -300){
+	if (yChange > 0) {
+		yLimit = y + 300;
+	}
+}
+
 
 // Camera follow player
 cam = view_camera[0];
@@ -68,7 +74,9 @@ else{
 	velocity = clamp(velocity, -maxSpeed, 0);
 }
 
+yLimit = min(0, yLimit); // Extra insurance to make sure player can't go past the starting point
 x = clamp(x, 400, 1000);
+y = min(y, yLimit);
 if (healthPercent < 100){
 	healthPercent += .009;
 }

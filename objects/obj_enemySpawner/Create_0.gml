@@ -2,18 +2,18 @@ spawnTypes = {};
 
 spawnTypes[$ string(obj_enemy1)] = {
     objectType: obj_enemy1,
-    spawnTime: 60,
-    timer: 60
+    spawnTime: 80,
+    timer: 80
 }
 spawnTypes[$ string(obj_enemy2)] = {
     objectType: obj_enemy2,
-    spawnTime: 75,
-    timer: 75
+    spawnTime: 90,
+    timer: 90
 }
 spawnTypes[$ string(obj_powerUp)] = {
     objectType: obj_powerUp,
-    spawnTime: 90,
-    timer: 90
+    spawnTime: 110,
+    timer: 110
 }
 
 rewindController = instance_find(obj_rewindController, 0);
