@@ -62,14 +62,9 @@ other.crashVelocityY -= -distanceY * 2 * impactFactor;
 
 audio_play_sound(sfx_impact, 1, false);
 
-if (object_index == obj_boss){
-    other.healthPercent = 0;
-    global.gameOver = true;
-    instance_destroy(other);
-}
 
 if (object_index == obj_player && !global.invincibility){
-	healthPercent -= 5;
+	healthPercent -= 10;
     obj_scoreboard.floatScore = max(0, obj_scoreboard.floatScore - 10);
 }
 

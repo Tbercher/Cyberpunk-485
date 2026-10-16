@@ -1,4 +1,4 @@
-draw_text(30, 20, "Score: " + string(round(floatScore)));
+draw_text(60, 30, "Score: " + string(round(floatScore)));
 if (instance_exists(obj_player)){
     draw_healthbar(
         display_get_gui_width() - 200,              // left
