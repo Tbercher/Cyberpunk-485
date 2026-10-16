@@ -12,4 +12,3 @@ active = true;
 isBoosted = false;
 yLimit = y;
 
-instance_create_layer(x, y, "Instances", obj_controlsNotification);

@@ -14,12 +14,13 @@ if (instance_exists(obj_player)){
         true             // draw border
     );
 }
-else {
+else { /*
     if (global.gameOver) {
+		show_debug_message("Game over");
 		room_goto(Room_gameOver);
         var center_x = display_get_gui_width() / 2;
         var center_y = display_get_gui_height() / 2;
         draw_text(center_x, center_y, "You survived traffic for");
         draw_text(center_x, center_y + 30, floatScore);
-    }
+    } */
 }
