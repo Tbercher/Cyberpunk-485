@@ -15,16 +15,19 @@ if (keyboard_check_pressed(vk_escape)){
 
         slider_volume = instance_create_layer(cx - 100, cy, "Instances", obj_volumeSlider);
         btn_fullscreen = instance_create_layer(cx - 100, cy + 60, "Instances", obj_fullscreenToggle_Button);
-        btn_quit = instance_create_layer(cx - 100, cy + 160, "Instances", obj_quit_button);
+        btn_return = instance_create_layer(cx - 125, cy + 120, "Instances", obj_returnToMain);
+        btn_quit = instance_create_layer(cx + 25, cy + 120, "Instances", obj_quit_button);
 
         instance_activate_object(obj_volumeSlider);
         instance_activate_object(obj_fullscreenToggle_Button);
         instance_activate_object(obj_quit_button);
+        instance_activate_object(obj_returnToMain);
 
     } else {
         if (instance_exists(slider_volume)) instance_destroy(slider_volume);
         if (instance_exists(btn_fullscreen)) instance_destroy(btn_fullscreen);
         if (instance_exists(btn_quit)) instance_destroy(btn_quit);
+        if (instance_exists(btn_return)) instance_destroy(btn_return);
 
         pause_sprite = -1;
         instance_activate_all();
