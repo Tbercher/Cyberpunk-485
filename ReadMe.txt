@@ -17,9 +17,9 @@ Game walkthrough
 	After surviving for as long as they can, eventually when the player does crash and take too much damage they will move to the end screen where they can restart the game or quit.
 
 Cheat codes
- Alt + I invincibility
-Alt + P for infinite police
-Alt + B for infinite Boost
+Alt + I invincibility
+Alt + P for police power up
+Alt + B for boost power up
 Alt + N for next level
 Alt + R for Restart
 
