@@ -31,8 +31,8 @@
   ],
   "name":"Room_mainMenu",
   "parent":{
-    "name":"Cybepunk-485",
-    "path":"Cybepunk-485.yyp",
+    "name":"Cyberpunk-485",
+    "path":"Cyberpunk-485.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Cybepunk-485",
+  "%Name":"Cyberpunk-485",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -34,7 +34,7 @@
   "MetaData":{
     "IDEVersion":"2026.0.0.16",
   },
-  "name":"Cybepunk-485",
+  "name":"Cyberpunk-485",
   "resources":[
     {"id":{"name":"Obj_485exit","path":"objects/Obj_485exit/Obj_485exit.yy",},},
     {"id":{"name":"obj_audio_controller","path":"objects/obj_audio_controller/obj_audio_controller.yy",},},
