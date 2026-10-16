@@ -16,5 +16,5 @@ image_xscale = scale;
 image_yscale = scale;
 
 if (hover && mouse_check_button_pressed(mb_left)) {
-    room_goto(Room_mainMenu);
+    room_goto(Room1);
 }

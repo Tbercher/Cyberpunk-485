@@ -73,6 +73,7 @@
     {"id":{"name":"obj_roadManager","path":"objects/obj_roadManager/obj_roadManager.yy",},},
     {"id":{"name":"obj_roadside","path":"objects/obj_roadside/obj_roadside.yy",},},
     {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},},
+    {"id":{"name":"obj_scoreText","path":"objects/obj_scoreText/obj_scoreText.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
     {"id":{"name":"obj_volumeSlider","path":"objects/obj_volumeSlider/obj_volumeSlider.yy",},},
     {"id":{"name":"obj_wall_level2","path":"objects/obj_wall_level2/obj_wall_level2.yy",},},
