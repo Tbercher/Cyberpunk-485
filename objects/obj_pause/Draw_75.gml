@@ -24,10 +24,10 @@ if (isPaused){
     // Reset drawing settings
     draw_set_alpha(1);
     draw_set_color(c_white);
-    instance_deactivate_all(true);
+    //instance_deactivate_all(true);
     
 }
 else{
     pause_sprite = -1;
-	instance_activate_all();
+	//instance_activate_all();
 }

@@ -1,16 +1,16 @@
 
 var isPolice = false;
 
-// if the collision is between a boss and the player then only process on the boss's end. 
+//if the collision is between a boss and the player then only process on the boss's end. 
 if (other.object_index == obj_boss){
     exit;
 }
 
-// only allow either police cars, bosses, or players to process the collision
+//only allow either police cars, bosses, or players to process the collision
 if ((object_index != obj_player) && (object_index != obj_policeCar) && (object_index != obj_boss)){
     exit;
 }
-// if this is a police car and it's inactive, exit
+//if this is a police car and it's inactive, exit
 if (object_index == obj_policeCar){
     isPolice = true;
     if (!active){
@@ -18,22 +18,21 @@ if (object_index == obj_policeCar){
     }
 }
 
-// if the other car is a police car and it's inactive, exit
+//if the other car is a police car and it's inactive, exit
 if (other.object_index == obj_policeCar && !other.active){
     exit;
 }
 
-// police cars should not collide with each other
+//police cars should not collide with each other
 if (object_index == obj_policeCar && other.object_index == obj_policeCar){
     exit;
 }
 
-// players should not collide with police cars
+//players should not collide with police cars
 if ((object_index == obj_player && other.object_index == obj_policeCar) || (object_index == obj_policeCar && other.object_index == obj_player)){
     exit;
 }
 
-// Find the direction between the cars?
 var distanceX = other.x - x;
 var distanceY = other.y - y;
 
