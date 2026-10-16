@@ -7,7 +7,7 @@ if (other.object_index == obj_boss){
 }
 
 //only allow either police cars, bosses, or players to process the collision
-if ((object_index != obj_player) && (object_index != obj_policeCar) && (object_index != obj_boss)){
+if ((object_index != obj_player) && (object_index != obj_player_1) && (object_index != obj_policeCar) && (object_index != obj_boss)){
     exit;
 }
 //if this is a police car and it's inactive, exit

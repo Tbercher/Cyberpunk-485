@@ -11,3 +11,5 @@ policeTimer = game_get_speed(gamespeed_fps) * 5;
 active = true;
 isBoosted = false;
 yLimit = y;
+
+instance_create_layer(x, y, "Instances", obj_controlsNotification);

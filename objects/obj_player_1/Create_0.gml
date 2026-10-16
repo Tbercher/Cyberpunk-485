@@ -5,3 +5,15 @@ image_angle = 90;
 
 cam_angle = 0;
 target_cam_angle = 0;
+velocity = 0;
+acceleration = acceleration;
+maxSpeed = maxSpeed;
+image_angle = 90;
+camera_initiated = false;
+healthPercent = 100;
+policed = false;
+policeTimer = game_get_speed(gamespeed_fps) * 5;
+active = true;
+isBoosted = false;
+yLimit = y;
+impactFactor = 15;
