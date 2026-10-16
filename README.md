@@ -1,4 +1,5 @@
-Game instructions
+
+Cyberpunk 485 Game instructions
 
 Menus
 	Use the mouse to click on buttons.
@@ -22,6 +23,10 @@ Alt + B for infinite Boost
 Alt + N for next level
 Alt + R for Restart
 
+Project Theme
+
+The project theme of time loops was implemented by allowing for the player character to go backwards in time reversing all damage or points lost. For example if they player takes a catastrophic hit and wants to re do the section they previously just did they can by pressing shift + space and rewinding time to their previous point. The game rewinds its entire game state back to a desired point of the players choosing
+
 Licensing information 
 Stylised crash impact, synth (Racing Game Sounds) by packsmithy -- https://freesound.org/s/873628/ -- License: Attribution 4.0
 
@@ -36,3 +41,4 @@ Music provided by TeknoAXE (https://teknoaxe.com/Link_Code_3.php?q=1949) License
 Music provided by TeknoAXE ( https://teknoaxe.com/Link_Code_3.php?q=2027&genre=Techno) Licensed under CC BY 4.0 
 
 Music provided by TeknoAXE ( https://teknoaxe.com/Link_Code_3.php?q=1997&genre=Techno) Licensed under CC BY 4.0 
+
