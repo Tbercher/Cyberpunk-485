@@ -1,37 +1,47 @@
 // 1. Inputs & Acceleration
 if (keyboard_check(vk_up)){
-	velocity -= acceleration;
+    velocity -= acceleration;
 }
-
 if (keyboard_check(vk_down)){
-	velocity += acceleration;
+    velocity += acceleration;
 }
+velocity = clamp(velocity, -maxSpeed, 0);
 
 // 2. Turning
-if (keyboard_check(vk_left)){
-	image_angle += 2;
-}
+var new_angle = image_angle;
+if (keyboard_check(vk_left))  new_angle += 2;
+if (keyboard_check(vk_right)) new_angle -= 2;
 
-if (keyboard_check(vk_right)){
-	image_angle -= 2;
-}
+//temp rotate mask
+var old_angle = image_angle;
+image_angle = new_angle;
 
-velocity = clamp(velocity, -maxSpeed, 0);
+if (!place_meeting(x, y, obj_wall)) {
+    //Safe to rotate
+    //keep new angle
+} else {
+    image_angle = old_angle;
+}
 
 // 3. Wall Collision & Movement (Axis-Independent Sliding)
 var move_x = -lengthdir_x(velocity, image_angle);
 var move_y = -lengthdir_y(velocity, image_angle);
 
+//Bounce (0 = no bounce, 1 = full reverse)
+var bounce = 10;
+
+//X movement
 if (!place_meeting(x + move_x, y, obj_wall)) {
     x += move_x;
 } else {
-    velocity = 0;
+    velocity = -velocity * bounce;
 }
 
+//y movement
 if (!place_meeting(x, y + move_y, obj_wall)) {
     y += move_y;
 } else {
-    velocity = 0;
+    velocity = -velocity * bounce;
 }
 
 // 4. Camera Follow Player
