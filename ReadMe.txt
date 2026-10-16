@@ -1,4 +1,3 @@
-We need to make a ReadMe.txt file that has the following 
 
 Game instructions
 
