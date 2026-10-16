@@ -1,15 +1,11 @@
 
 var isPolice = false;
 
-//if the collision is between a boss and the player then only process on the boss's end. 
-if (other.object_index == obj_boss){
+//only allow either police cars, or players to process the collision
+if ((object_index != obj_player) && (object_index != obj_player_1) && (object_index != obj_policeCar)){
     exit;
 }
 
-//only allow either police cars, bosses, or players to process the collision
-if ((object_index != obj_player) && (object_index != obj_player_1) && (object_index != obj_policeCar) && (object_index != obj_boss)){
-    exit;
-}
 //if this is a police car and it's inactive, exit
 if (object_index == obj_policeCar){
     isPolice = true;
@@ -63,7 +59,13 @@ other.crashVelocityY -= -distanceY * 2 * impactFactor;
 audio_play_sound(sfx_impact, 1, false);
 
 
-if (object_index == obj_player && !global.invincibility){
+if (other.object_index == obj_boss && !policed && !global.invincibility){
+    //exit;
+	healthPercent -= 25;
+	obj_scoreboard.floatScore = max(0, obj_scoreboard.floatScore - 10);
+}
+
+if (object_index == obj_player && !global.invincibility && !policed && other.object_index != obj_boss){
 	healthPercent -= 10;
     obj_scoreboard.floatScore = max(0, obj_scoreboard.floatScore - 10);
 }

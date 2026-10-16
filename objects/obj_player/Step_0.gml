@@ -45,7 +45,6 @@ if (policeTimer <= 0){
         police_car.mask_index = -1;
         police_car.alarm[0] = 180;
 }
-	global.invincibility = false;
 	policed = false;
 }
 

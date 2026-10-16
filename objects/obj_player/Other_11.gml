@@ -7,7 +7,6 @@ if (!policed){
 	instance_create_layer(x+120, y-100, "Instances", obj_policeCar);
 	instance_create_layer(x, y-200, "Instances", obj_policeCar);
 	instance_create_layer(x-120, y-100, "Instances", obj_policeCar);
-	global.invincibility = true;
     policeTimer = game_get_speed(gamespeed_fps) * 5;
 	policed = true;
 	

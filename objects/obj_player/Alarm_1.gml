@@ -1,4 +1,5 @@
 isBoosted = false;
-if (!policed){
+/* if (!policed){
     invincible = false;
 }
+    */
