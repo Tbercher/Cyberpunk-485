@@ -59,15 +59,15 @@ other.crashVelocityY -= -distanceY * 2 * impactFactor;
 audio_play_sound(sfx_impact, 1, false);
 
 
-var player_id = instance_find(obj_player, 0);
-if (player_id != noone) {
-    if (other.object_index == obj_boss && !player_id.policed && !global.invincibility){
+var temp_player_id = instance_find(obj_player, 0);
+if (temp_player_id != noone) {
+    if (other.object_index == obj_boss && !temp_player_id.policed && !global.invincibility){
         //exit;
         healthPercent -= 25;
         obj_scoreboard.floatScore = max(0, obj_scoreboard.floatScore - 10);
     }
 
-    if (object_index == obj_player && !global.invincibility && !player_id.policed && other.object_index != obj_boss){
+    if (object_index == obj_player && !global.invincibility && !temp_player_id.policed && other.object_index != obj_boss){
         healthPercent -= 10;
         obj_scoreboard.floatScore = max(0, obj_scoreboard.floatScore - 10);
     }
