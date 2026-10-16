@@ -1,0 +1,1 @@
+global.final_score = floatScore;
